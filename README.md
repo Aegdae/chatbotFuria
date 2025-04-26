@@ -82,3 +82,9 @@ O chatbot responde a perguntas sobre:
 Sinta-se à vontade para abrir issues ou pull requests para melhorias. 
 Caso queira contribuir, faça um fork deste repositório, faça suas alterações 
 e envie um pull request com uma descrição clara do que foi alterado.
+
+MIT License
+
+Copyright (c) 2025 Aegdae
+
+Permitted use, modification, distribution, and sublicensing are subject to the terms of this license. For the full license, please refer to: https://opensource.org/licenses/MIT
