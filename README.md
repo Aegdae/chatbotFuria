@@ -72,14 +72,14 @@ O chatbot responde a perguntas sobre:
 
 ## Como Funciona
 
-# O front-end (Angular) se comunica com o back-end (Python) por meio de uma API REST.
+- O front-end (Angular) se comunica com o back-end (Python) por meio de uma API REST.
 
-# O back-end faz requisições à API Cohere para gerar respostas automáticas baseadas nas perguntas dos usuários.
+- O back-end faz requisições à API Cohere para gerar respostas automáticas baseadas nas perguntas dos usuários.
 
-# O MongoDB armazena informações sobre partidas e jogadores.
+- O MongoDB armazena informações sobre partidas e jogadores.
 
 ## Contribuições
 
-# Sinta-se à vontade para abrir issues ou pull requests para melhorias. 
-# Caso queira contribuir, faça um fork deste repositório, faça suas alterações 
-# e envie um pull request com uma descrição clara do que foi alterado.
+Sinta-se à vontade para abrir issues ou pull requests para melhorias. 
+Caso queira contribuir, faça um fork deste repositório, faça suas alterações 
+e envie um pull request com uma descrição clara do que foi alterado.
