@@ -1,0 +1,45 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+<div class="container">
+  <div class="title">
+    <h1 aria-label="Nome do bot: Chat Furia">ChatFuria</h1>
+    <div class="logo">
+      <img src="//logotyp.us/file/furia.svg" alt="logo da FURIA" />
+    </div>
+  </div>
+  <div class="chat-IA">
+    <div #chatMessages class="chat-messages" aria-live="polite">
+      <div
+        *ngFor="let message of messages"
+        [class]="message.sender === 'Usuario' ? 'user-message' : 'bot-message'"
+      >
+        <p>
+          <strong>{{ message.sender }}:</strong> {{ message.text }}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="typing-indicator" id="typing">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="typing-text" aria-label="Furia está digitando"
+      >FURIA está digitando...</span
+    >
+  </div>
+  <form (submit)="sendMessage($event)" class="submit">
+    <textarea
+      [(ngModel)]="userInput"
+      placeholder="Pergunte sobre o time de CS2 da Furia"
+      name="userInput"
+      (keydown.enter)="sendMessage($event)"
+      aria-label="Caixa de texto para escrever mensagens"
+    ></textarea>
+    <button type="submit" aria-label="Botao para enviar mensagem">
+      <i class="fas fa-paper-plane"></i>
+    </button>
+  </form>
+</div>
