@@ -1,6 +1,6 @@
 # FURIA Chatbot
 
-Este projeto é um chatbot interativo desenvolvido para fornecer informações sobre a equipe de CS2 da FURIA, incluindo elenco, próximas partidas e últimas partidas. Ele foi criado como parte de um estágio e utiliza tecnologias como Angular no front-end e Python no back-end para comunicação com a API.
+Este projeto é um chatbot interativo desenvolvido para fornecer informações sobre a equipe de CS2 da FURIA, incluindo elenco, próximas partidas e últimas partidas. Utiliza tecnologias como Angular no front-end e Python no back-end para comunicação com a API.
 
 ## Tecnologias Utilizadas
 
@@ -22,7 +22,6 @@ O chatbot responde a perguntas sobre:
 
 ### Requisitos
 
-- Node.js
 - Angular CLI
 - Python 3.x
 - MongoDB
