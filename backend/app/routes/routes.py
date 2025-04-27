@@ -1,3 +1,4 @@
+import time
 from flask import Blueprint, request, jsonify
 from app.controller.chat import chat_response
 from app.services.update import update_past_matches, update_roster, update_upcoming_matches
@@ -13,6 +14,7 @@ def chat():
     if not user_input:
         return jsonify({"error": "Mensagem não recebida"}), 400
 
+    time.sleep(2)
     response = chat_response(user_input, history)
 
     return jsonify({'response': response})
