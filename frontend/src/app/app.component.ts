@@ -95,6 +95,7 @@ export class AppComponent implements AfterViewInit {
     this.userInput = '';
   }
 
+  // Descer a conversa a cada nova interação
 
   private scrollToBottom(): void {
     if (this.chatContainer) {
@@ -105,6 +106,7 @@ export class AppComponent implements AfterViewInit {
       }
     }
   }
+
 
   ngAfterViewInit(): void {
     this.scrollToBottom();
