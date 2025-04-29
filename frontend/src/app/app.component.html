@@ -16,9 +16,15 @@
         *ngFor="let message of messages"
         [class]="message.sender === 'Usuario' ? 'user-message' : 'bot-message'"
       >
-        <p>
+        <p *ngIf="message.sender === 'Usuario'">
           <strong>{{ message.sender }}:</strong> {{ message.text }}
         </p>
+        <p
+          *ngIf="message.sender !== 'Usuario'"
+          [innerHTML]="
+            '<strong>' + message.sender + ':</strong> ' + message.text
+          "
+        ></p>
       </div>
     </div>
   </div>
@@ -30,7 +36,7 @@
       >FURIA está digitando...</span
     >
   </div>
-  
+
   <form (submit)="sendMessage($event)" class="submit">
     <textarea
       [(ngModel)]="userInput"

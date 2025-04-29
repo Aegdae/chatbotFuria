@@ -1,8 +1,8 @@
 import os
 import requests
 from dotenv import load_dotenv
-from app.model.db_roster import RosterDatabase
-from app.model.db_matches import MatchesDatabase
+from application.model.db_roster import RosterDatabase
+from application.model.db_matches import MatchesDatabase
 
 load_dotenv("C:/Users/Jonna/OneDrive/Documentos/Projeto-Furia/backend/env/config.env")
 
@@ -32,6 +32,9 @@ def chat_response(user_input, history=None):
 
     if 'elenco' in user_input.lower() or 'jogadores' in user_input.lower():
         return elenco_texto
+    
+    if "quem criou voce" in user_input.lower() or "seu criador" in user_input.lower():
+        return "Fui criado por Jonnathas! Você pode ver mais projetos no GitHub:  <a href='https://github.com/Aegdae' target='_blank'>github.com/Aegdae"
     
     if 'proxima partida' in user_input.lower() or 'proximo jogo' in user_input.lower() or 'proximas partidas' in user_input.lower() or 'proximos jogos' in user_input.lower():
         upcoming_matches = db_matches.get_upcoming_matches()

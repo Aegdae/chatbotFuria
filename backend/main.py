@@ -1,6 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
-from app.routes.routes import chatView
+from application.routes.routes import chatView
 
 # Rodar o backEnd
 

@@ -1,7 +1,7 @@
 import time
 from flask import Blueprint, request, jsonify
-from app.controller.chat import chat_response
-from app.services.update import update_past_matches, update_roster, update_upcoming_matches
+from application.controller.chat import chat_response
+from application.services.update import update_past_matches, update_roster, update_upcoming_matches
 
 chatView = Blueprint('chat', __name__)
 

@@ -1,6 +1,6 @@
-from app.services.infoFuria import getFuriaRoster, getFuriaRecentMatches, getFuriaUpcomingMatches
-from app.model.db_roster import RosterDatabase
-from app.model.db_matches import MatchesDatabase
+from application.services.infoFuria import getFuriaRoster, getFuriaRecentMatches, getFuriaUpcomingMatches
+from application.model.db_roster import RosterDatabase
+from application.model.db_matches import MatchesDatabase
 
 DBRoster = RosterDatabase()
 DBMatches = MatchesDatabase()

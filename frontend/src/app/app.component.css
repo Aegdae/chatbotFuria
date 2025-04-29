@@ -59,6 +59,16 @@
   word-break: break-word;
 }
 
+::ng-deep .bot-message a,
+::ng-deep .bot-message a:visited {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+::ng-deep .bot-message a:hover {
+  text-decoration: underline;
+}
+
 .container .chat-IA .user-message {
   background-color: #fff;
   color: #222;
