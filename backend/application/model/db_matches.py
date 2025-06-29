@@ -2,7 +2,7 @@ from pymongo import MongoClient
 from dotenv import load_dotenv
 import os
 
-path = load_dotenv("C:/Users/Jonna/OneDrive/Documentos/Projeto-Furia/backend/env/dbconfig.env")
+path = load_dotenv("C:/Users/Jonna/Documentos/Projetos/chatbotFuria/backend/env/dbconfig.env")
 
 #Banco de dados com atualização das partidas
 

@@ -75,7 +75,10 @@ O chatbot responde a perguntas sobre:
 
 - O back-end faz requisições à API Cohere para gerar respostas automáticas baseadas nas perguntas dos usuários.
 
+- A atualização do elenco é realizada por meio de uma requisição **POST** para a rota `http://localhost:5000/updateData`.
+
 - O MongoDB armazena informações sobre partidas e jogadores.
+
 
 ## Contribuições
 
